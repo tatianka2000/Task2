@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/card_view_heght"
+    android:layout_gravity="center"
+    android:layout_marginTop="@dimen/items_margin"
+    android:layout_marginBottom="@dimen/items_margin"
+    android:background="@drawable/roundrect_issue"
+    android:id="@+id/cardViewIssue1"
+    >
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="@dimen/card_right_width"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/items_margin_big">
+
+            <ImageView
+                android:layout_width="@dimen/card_image_size"
+                android:layout_height="@dimen/card_image_size"
+                android:id="@+id/imageViewIssueIcon"
+                android:src="@drawable/shape"
+                android:layout_gravity="center_horizontal" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/imageViewLike"
+                    android:src="@drawable/ic_thumb_up"
+                    android:paddingRight="@dimen/items_margin"
+                    android:layout_gravity="center" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textVievLikesCount"
+                    android:textColor="@color/black_23"
+                    android:textSize="@dimen/text_size_14"
+                    android:textStyle="bold"
+                    android:gravity="right"
+                    android:layout_gravity="center" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="wrap_content"
+            android:background="@color/black_11"
+            android:layout_gravity="bottom" />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/type_municipal"
+                android:id="@+id/textViewCardCaption"
+                android:height="36dp"
+                android:textSize="@dimen/text_size_16"
+                android:textColor="@color/black_87"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/address"
+                android:textSize="@dimen/text_size_14"
+                android:textColor="@color/black_54"
+                android:id="@+id/textViewCardAddress" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/date_created"
+                    android:textSize="@dimen/text_size_14"
+                    android:textColor="@color/black_54"
+                    android:id="@+id/textViewCardDate"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/days"
+                    android:textSize="@dimen/text_size_14"
+                    android:textColor="@color/black_54"
+                    android:id="@+id/textViewCardDays"
+                    android:gravity="right"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

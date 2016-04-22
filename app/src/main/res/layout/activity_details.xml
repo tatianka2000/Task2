@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.tatianka.test1.MainActivity"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/scrollView"
+        style="@style/ScrollView" >
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                style="@style/TextViewCaption"
+                android:text="@string/caption"
+                android:id="@+id/textViewCaption"
+                android:onClick="onViewClick" />
+
+            <TextView
+                style="@style/TextViewRound"
+                android:text="@string/in_work"
+                android:id="@+id/textViewInWork"
+                android:onClick="onViewClick" />
+
+            <View style="@style/splitter" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/TextViewGray"
+                    android:text="@string/created"
+                    android:id="@+id/textViewCreated"
+                    android:onClick="onViewClick" />
+
+                <TextView
+                    style="@style/TextViewRight"
+                    android:text="@string/date_created"
+                    android:id="@+id/textViewDateCreated"
+                    android:onClick="onViewClick" />
+            </LinearLayout>
+
+            <View style="@style/splitter" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/TextViewGray"
+                    android:text="@string/registered"
+                    android:id="@+id/textViewRegistered"
+                    android:onClick="onViewClick" />
+
+                <TextView
+                    style="@style/TextViewRight"
+                    android:text="@string/date_registered"
+                    android:id="@+id/textViewDateRegisrered"
+                    android:onClick="onViewClick" />
+            </LinearLayout>
+
+            <View style="@style/splitter" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/TextViewGray"
+                    android:text="@string/resolve"
+                    android:id="@+id/textViewResolve"
+                    android:onClick="onViewClick" />
+
+                <TextView
+                    style="@style/TextViewRight"
+                    android:text="@string/date_resolve"
+                    android:id="@+id/textViewDateResolve"
+                    android:onClick="onViewClick" />
+            </LinearLayout>
+
+            <View style="@style/splitter" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/TextViewGray"
+                    android:text="@string/responsible"
+                    android:id="@+id/textViewResponsible"
+                    android:onClick="onViewClick" />
+
+                <TextView
+                    style="@style/TextViewRight"
+                    android:text="@string/responsible_name"
+                    android:id="@+id/textViewResponsibleName"
+                    android:onClick="onViewClick" />
+            </LinearLayout>
+
+            <View style="@style/splitter" />
+
+            <TextView
+                style="@style/TextViewBlack"
+                android:text="@string/details"
+                android:id="@+id/textViewDetails"
+                android:onClick="onViewClick" />
+
+            <android.support.v7.widget.RecyclerView
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:id="@+id/recyclerView"
+                android:layout_marginLeft="@dimen/padding_size10"
+                android:layout_marginRight="@dimen/padding_size10"
+                android:layout_margin="@dimen/padding_size10" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

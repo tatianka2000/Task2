@@ -1,0 +1,47 @@
+<resources>
+    <string name="app_name">e-contact</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+
+    <string name="contacts">Зроблено з любов\'ю \n<a href="#">IT Ruh Dnipro</a> та <a href="#">Yalantis</a></string>
+
+    <string name="nav_title_issues">Всі зверннення</string>
+    <string name="nav_title_map">Звернення на мапі</string>
+    <string name="nav_title_account">Увійти в аккаунт</string>
+
+    <string name="type_municipal">Комунальне господарство</string>
+    <string name="type_building">Благоустрій та будівництво</string>
+    <string name="type_other">Інше</string>
+
+    <string name="state_done">Виконано</string>
+    <string name="state_inwork">В роботі</string>
+    <string name="state_waiting">Очікує</string>
+
+    <string name="created">Створено</string>
+    <string name="registered">Зареєстровано</string>
+    <string name="resolve">Вирішити до</string>
+    <string name="responsible">Відповідальний</string>
+
+    <string name="caption">Комунальне господарство</string>
+    <string name="in_work">В роботі</string>
+
+    <string name="issue_id">CE-12456</string>
+    <string name="date_created">25 січня 2016</string>
+    <string name="date_registered">26 січня 2016</string>
+    <string name="date_resolve">29 січня 2016</string>
+    <string name="responsible_name">Дніпропетровський МВК()</string>
+    <string name="details">Відкритий люк (біля рекламного щита), район повороту 18 та 19 трамваїв на проспект Миру з Донецького шоссе</string>
+    <string name="address">Вул. Бульвар Кротова, 22, Дніпропетровськ</string>
+    <string name="days">7 днів</string>
+
+    <string-array name="imageURLs">
+        <item>http://www.medikforum.ru/news/uploads/posts/2013-05/1369388538_24.jpg</item>
+        <item>http://altaypost.ru/uploads/posts/2013-07/thumbs/1375085013_lyk.jpg</item>
+    </string-array>
+
+
+
+</resources>

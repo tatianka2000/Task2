@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.tatianka.task2.MainActivity"
+    tools:showIn="@layout/app_bar_main"
+    android:background="@drawable/gradient_background"
+    >
+
+    <android.support.design.widget.TabLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tabLayout"
+        android:background="?attr/colorPrimary"
+        app:tabGravity="fill"
+        app:tabMode="fixed"
+        app:tabIndicatorColor="@android:color/white"
+        app:tabIndicatorHeight="@dimen/tab_indicator_height"
+        app:tabSelectedTextColor="@color/white_two"
+        app:tabTextColor="@color/white_two"
+        android:minHeight="?attr/actionBarSize"
+        />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/pager"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/tabLayout"
+        />
+
+
+</RelativeLayout>

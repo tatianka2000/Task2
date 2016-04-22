@@ -1,0 +1,77 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="splitter">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/splitter_size</item>
+        <item name="android:background">@android:color/darker_gray</item>
+        <item name="android:layout_marginTop">@dimen/items_margin</item>
+        <item name="android:layout_marginBottom">@dimen/items_margin</item>
+    </style>
+
+
+    <style name="TextViews">
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_marginTop">@dimen/padding_size5</item>
+        <item name="android:layout_marginRight">@dimen/padding_size5</item>
+    </style>
+
+    <style name="TextViewCaption" parent="TextViews">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">@dimen/text_size_18</item>
+    </style>
+
+    <style name="TextViewBlack" parent="TextViews">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">@dimen/text_size_16</item>
+    </style>
+
+    <style name="TextViewGray" parent="TextViews">
+        <item name="android:textSize">@dimen/text_size_16</item>
+    </style>
+
+    <style name="TextViewRight" parent="TextViews">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">@dimen/text_size_16</item>
+        <item name="android:gravity">right</item>
+    </style>
+
+    <style name="TextViewRound" parent="TextViews">
+        <item name="android:textColor">@color/white_two</item>
+        <item name="android:background">@drawable/roundrect</item>
+        <item name="android:textSize">@dimen/text_size_16</item>
+        <item name="android:paddingTop">@dimen/padding_size5</item>
+        <item name="android:paddingBottom">@dimen/padding_size5</item>
+        <item name="android:paddingLeft">@dimen/padding_size10</item>
+        <item name="android:paddingRight">@dimen/padding_size10</item>
+    </style>
+
+    <style name="ScrollView">
+        <item name="android:layout_alignParentLeft">true</item>
+        <item name="android:layout_alignParentStart">true</item>
+        <item name="android:layout_marginLeft">@dimen/items_margin</item>
+        <item name="android:layout_marginRight">@dimen/items_margin</item>
+        <item name="android:layout_marginTop">@dimen/padding_size5</item>
+        <item name="android:layout_marginBottom">@dimen/padding_size5</item>
+    </style>
+
+</resources>
