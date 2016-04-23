@@ -2,11 +2,9 @@ package com.example.tatianka.task2;
 
 import android.content.Context;
 import android.content.Intent;
-import android.support.v7.widget.CardView;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
-import android.view.ViewDebug;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
@@ -28,7 +26,7 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
             private TextView mTextViewLikes;
             public ViewHolder(View v) {
                 super(v);
-                mCardView = v.findViewById(R.id.cardViewIssue1);
+                mCardView = v.findViewById(R.id.cardViewIssue);
                 mTextViewAddress = (TextView)v.findViewById(R.id.textViewCardAddress);
                 mTextViewDescr = (TextView)v.findViewById(R.id.textViewCardCaption);
                 mTextViewDays = (TextView)v.findViewById(R.id.textViewCardDays);
@@ -53,12 +51,11 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
         public void onBindViewHolder(ViewHolder holder, int position) {
 
             holder.mTextViewAddress.setText(mDataset.get(position).getAddress());
-            holder.mTextViewDescr.setText(mDataset.get(position).getDescryption());
+            holder.mTextViewDescr.setText(mDataset.get(position).getTypeName());
             holder.mTextViewDate.setText(mDataset.get(position).getDateCreated());
             holder.mTextViewDays.setText(String.valueOf(mDataset.get(position).getDays()));
             holder.mTextViewLikes.setText(String.valueOf(mDataset.get(position).getLikesCount()));
-
-            holder.mImageView.setImageResource(R.drawable.shape);
+            holder.mImageView.setImageResource(mDataset.get(position).getIconID());
 
             holder.mCardView.setOnClickListener(new View.OnClickListener() {
                 @Override

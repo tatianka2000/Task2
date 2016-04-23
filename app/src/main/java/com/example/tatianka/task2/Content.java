@@ -5,7 +5,6 @@ package com.example.tatianka.task2;
 public class Content {
 
     public enum State {DONE, INWORK, WAITING};
-    public enum Type {MUNICIPAL, BUILDING, OTHER};
 
     private String mId;
     private int mLikesCount;
@@ -20,7 +19,7 @@ public class Content {
     private String mResponsible;
 
     private State mState;
-    private Type mType;
+    private ContentType mType;
 
 
     public Content(){}
@@ -28,7 +27,7 @@ public class Content {
     public Content(String id, int likesCount, int days, String dateCreated,
                    String dateRegistered, String dateSolveTo,
                    String descryption, String address,
-                   String responsible, State state, Type type){
+                   String responsible, State state, ContentType type){
         mId = id;
         mLikesCount = likesCount;
         mDays = days;
@@ -81,8 +80,12 @@ public class Content {
         return mState;
     }
 
-    public Type getType(){
-        return mType;
+    public String getTypeName(){
+        return mType.getTypeName();
+    }
+
+    public int getIconID(){
+        return mType.getIconRes();
     }
 
     public void setId(String id){
@@ -130,7 +133,4 @@ public class Content {
         mState = state;
     }
 
-    public void setType(Type type){
-        mType = type;
-    }
 };

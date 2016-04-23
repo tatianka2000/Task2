@@ -2,7 +2,6 @@ package com.example.tatianka.task2;
 
 import android.content.Context;
 import android.content.Intent;
-import android.support.v7.widget.CardView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -29,7 +28,7 @@ public class ListViewAdapter extends BaseAdapter {
         private TextView mTextViewLikes;
 
         public ViewHolder (View v) {
-            mCardView = v.findViewById(R.id.cardViewIssue1);
+            mCardView = v.findViewById(R.id.cardViewIssue);
             mTextViewAddress = (TextView)v.findViewById(R.id.textViewCardAddress);
             mTextViewDescr = (TextView)v.findViewById(R.id.textViewCardCaption);
             mTextViewDays = (TextView)v.findViewById(R.id.textViewCardDays);
@@ -51,12 +50,12 @@ public class ListViewAdapter extends BaseAdapter {
         convertView.setTag(viewHolder);
 
         viewHolder.mTextViewAddress.setText(mDataset.get(position).getAddress());
-        viewHolder.mTextViewDescr.setText(mDataset.get(position).getDescryption());
+
+        viewHolder.mTextViewDescr.setText(mDataset.get(position).getTypeName());
         viewHolder.mTextViewDate.setText(mDataset.get(position).getDateCreated());
         viewHolder.mTextViewDays.setText(String.valueOf(mDataset.get(position).getDays()));
         viewHolder.mTextViewLikes.setText(String.valueOf(mDataset.get(position).getLikesCount()));
-
-        viewHolder.mImageView.setImageResource(R.drawable.shape);
+        viewHolder.mImageView.setImageResource(mDataset.get(position).getIconID());
 
         viewHolder.mCardView.setOnClickListener(new View.OnClickListener() {
             @Override

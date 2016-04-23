@@ -13,11 +13,15 @@
 
     <dimen name="items_margin">8dp</dimen>
     <dimen name="items_margin_big">16dp</dimen>
+    <dimen name="items_margin_small">4dp</dimen>
+
     <dimen name="splitter_size">1dp</dimen>
 
     <dimen name="text_size_18">18sp</dimen>
     <dimen name="text_size_16">16sp</dimen>
     <dimen name="text_size_14">14sp</dimen>
+    <dimen name="text_height">18dp</dimen>
+    <dimen name="text_height_2">36dp</dimen>
 
     <dimen name="card_view_heght">126dp</dimen>
     <dimen name="card_radius">8dp</dimen>
