@@ -13,10 +13,10 @@ import java.util.List;
 
 public class FragmentRecyclerView extends Fragment {
 
-    static final String ARGUMENT_PAGE_NUMBER = "arg_page_number";
+    static final String ARGUMENT_PAGE_NUMBER = "arg_page_number"; //[Comment] Wrong visibility modifier
 
     private List<Content> mContent;
-    int mPageNumber;
+    int mPageNumber; //[Comment] Wrong visibility modifier
 
     static FragmentRecyclerView newInstance(int page) {
         FragmentRecyclerView fragmentRelative = new FragmentRecyclerView();

@@ -1,6 +1,6 @@
 package com.example.tatianka.task2;
 
-import android.content.Intent;
+import android.content.Intent; //[Comment] Unused import
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
@@ -17,9 +17,9 @@ public class FragmentListView extends Fragment {
     static final String ARGUMENT_PAGE_NUMBER = "arg_page_number";
 
     private List<Content> mContent;
-    int mPageNumber;
+    int mPageNumber; //[Comment] Wrong visibility modifier
 
-    static FragmentListView newInstance(int page) {
+    static FragmentListView newInstance(int page) { //[Comment] Wrong visibility modifier
         FragmentListView fragmentListView = new FragmentListView();
         Bundle arguments = new Bundle();
         arguments.putInt(ARGUMENT_PAGE_NUMBER, page);

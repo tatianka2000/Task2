@@ -34,7 +34,7 @@ public class MainActivity extends AppCompatActivity
         }
 
         // init floating action button
-        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
+        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab); //[Comment] Unused
 
         // init navigation drawer
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);

@@ -16,7 +16,7 @@ import java.util.List;
  */
 public class ListViewAdapter extends BaseAdapter {
     private List<Content> mDataset;
-    private Context mContext;
+    private Context mContext; //[Comment] Unused
 
     public static class ViewHolder {
         private View mCardView;

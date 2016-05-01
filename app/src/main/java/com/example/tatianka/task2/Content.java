@@ -2,9 +2,9 @@ package com.example.tatianka.task2;
 
 
 
-public class Content {
+public class Content { //[Comment] Please make project structure with packages
 
-    public enum State {DONE, INWORK, WAITING};
+    public enum State {DONE, INWORK, WAITING}; //[Comment] Unnecessary ";"
 
     private String mId;
     private int mLikesCount;
